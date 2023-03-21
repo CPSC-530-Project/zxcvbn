@@ -1,14 +1,15 @@
 from zxcvbn import zxcvbn
 
 INPUTFILE = "passwords.csv"
-OUTPUTFILE = "password_strength.csv"
+OUTPUTFILE = "password_strength2.csv"
 
-passwordfile = open("38650-password-sktorrent.txt","r")
+passwordfile = open("1000000-password-seclists.txt","r")
 passwordlist = []
 passworddict = {}
 #store password in passwordict
 for line in passwordfile:
-    passwordlist.append(line.strip())
+    if len(line) <= 8:
+        passwordlist.append(line.strip())
     
 
 #run passwords in zxcvbn() function 
