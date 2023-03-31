@@ -2,7 +2,7 @@
 import os
 
 # Open input file of md5 hashes and store hashed values in list
-INFILE = "38650-password-sktorrent-lt8-s0-4-md5.txt"
+INFILE = "38650-password-sktorrent-lt8-s1-2-md5.txt"
 passwordfile = open(INFILE, "r")
 passwordlist = []
 
@@ -21,7 +21,7 @@ RUNTIME = 5 # stop program execution after x seconds
 # INCREMENT_MIN = 1       # Initial length of bruteforce string
 # INCREMENT_MAX = 8       # Max length of bruteofrce string
 
-OUTFILE = "cracked.csv"                         # Output of hashed values if they were cracked
+OUTFILE = "cracked-s1.csv"                         # Output of hashed values if they were cracked
 OUTFILE_FORMAT = "--outfile-format=1,2,3,4,5,6" # Specifies what values are included in the outfile
 SEPARATOR = "-p ,"                              # Makes outfile values comma separated
 # INFILE = "md5.txt"                              # File of hashed values that needs to be cracked
