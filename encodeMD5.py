@@ -3,7 +3,7 @@ import hashlib
 
 OUTPUTFILE = "passwords_MD5.csv"
 
-passwordfile = open("1000000-password-seclists.txt","r")
+passwordfile = open("38650-password-sktorrent.txt","r")
 passwordlist = []
 #store password in passwordict
 for line in passwordfile:
